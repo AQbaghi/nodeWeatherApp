@@ -1,0 +1,97 @@
+body{
+    color: rgb(71, 132, 212);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+.main-header{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* the nav bar */
+.nav-bar{
+    display: flex;
+    border: solid rgb(30, 85, 236) 1px;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+.nav-bar li{
+    list-style: none;
+    width: 33.33334%;
+    padding: 0;
+    margin: 0;
+}
+.nav-bar li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color:#0076bb;
+    padding: 10px 0;
+}
+.nav-bar li a:hover{
+    background-color:#005a8f;
+}
+/* city search form */
+.search-form{
+    display: block;
+    margin: 16px;
+    padding: 10px;
+}
+.search-form input{
+    height: 36px;
+    width: 70%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgb(167, 167, 167);
+}
+.search-form button{
+    height: 36px;
+    width: 26%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid rgb(167, 167, 167);
+}
+
+/* tweather content */
+.cityName{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.metricTemperature{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+.weatherText{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.err{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* the footer */
+footer{
+    color: #555;
+    border-top: solid 1px #bbb;
+    margin: 10px;
+}

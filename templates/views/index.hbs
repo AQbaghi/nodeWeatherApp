@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        #weather{
+            background-color: rgb(37, 53, 196);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <form class="search-form">
+            <input name="search" placeholder="city location" type="text">
+            <button>search</button>
+        </form>
+
+        <div class="weather-template"></div>
+
+    </div>
+    </div>
+    {{>footer}}
+    <script src="/app/app.js"></script>
+</body>
+</html>
