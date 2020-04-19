@@ -20,15 +20,23 @@ searchForm.addEventListener('submit', e=>{
 
     getWeather(searchedCity).then(data=>{
         console.log(data)
+            
+        
         if(data.error){
             weatherTemplate.innerHTML=`<p class="err">${data.error}</p>`;
         }else if(data.err){
             weatherTemplate.innerHTML=`<p class="err">${data.err}</p>`;
         }else{
+            let isDay=null;
+            if(data.isDayTime){
+                isDay='Day';
+            }else{
+                isDay='Night';
+            }
             weatherTemplate.innerHTML=`
             <p class="cityName">${data.cityName}</p>
             <p class="metricTemperature">${data.metricTemperature}°C</p>
-            <p class="weatherText">${data.weatherText}</p>
+            <p class="weatherText">A ${data.weatherText} ${isDay}</p>
         `;
         }
     });
