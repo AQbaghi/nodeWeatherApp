@@ -12,6 +12,7 @@ const parcialsPath= path.join(__dirname, '../templates/parcials');
 
 //setting app to express method for use
 const app= express();
+const port= process.env.PORT || 3000
 
 //set up public static directory to serve
 app.use(express.static(publicPath));
@@ -93,6 +94,6 @@ app.get('*', (req, res)=>{
 });
 
 //listening to the server
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log('web server up and running...');
 });

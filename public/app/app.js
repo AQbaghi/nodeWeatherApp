@@ -3,7 +3,7 @@ const searchForm= document.querySelector('.search-form');
 const weatherTemplate= document.querySelector('.weather-template')
 
 const getWeather= async function(searchedCity){
-    const queryLink= `http://localhost:3000/weather?adress=${searchedCity}`;
+    const queryLink= `/weather?adress=${searchedCity}`;
     try{
         const response= await fetch(queryLink);
         const data= await response.json();
